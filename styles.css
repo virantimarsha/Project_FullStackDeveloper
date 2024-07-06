@@ -1,0 +1,141 @@
+body {
+    font-family: 'Comic Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, main, section, footer {
+    background-color: #FF0000; 
+    padding: 50px 0;
+}
+header {
+    margin-top: 0; 
+    padding-top: 10px; 
+}
+main {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+.nav-link {
+    position: relative; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+    color: white; 
+}
+.nav-link:hover {
+    transform: scale(1.1); 
+    color: #FFD700; 
+}
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+.custom-heading {
+    font-weight: bold;
+    font-size: 65px;
+    animation: moveText 3s linear infinite; 
+}
+@keyframes moveText {
+    0%, 100% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(40px); 
+    }
+}
+@keyframes zoomImage {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.zoom-effect {
+    max-width: 550px; 
+    animation: zoomImage 3s ease-in-out infinite; 
+}
+@keyframes animateText {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.2); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+h2.delicious-burger {
+    font-size: 3rem; 
+    animation: animateText 2s ease-in-out infinite; 
+}
+.zoom-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+.zoom-on-hover:hover {
+    transform: scale(1.1); 
+}
+header .logo img {
+    margin-right: 10px;
+}
+header h1 {
+    font-weight: 700;
+    color: white;
+}
+main img, section img {
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    color: white;
+}
+.custom-heading {
+    font-weight: bold;
+    font-size: 65px;
+}
+p{
+    color:yellow;
+}
+.about-text {
+    text-align: justify;
+}
+.card{
+    border-radius: 10px;
+}
+.signup-form button, .card .btn, footer .social-media a {
+    background-color: #FF0000; 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 5px 0;
+}
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+}
+.about-image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+.about-text-container {
+    padding: 30px; 
+    padding-left: 0px;
+}
+.zoom-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+.zoom-on-hover:hover {
+    transform: scale(1.05); 
+}
+
